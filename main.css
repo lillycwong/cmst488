@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+}
+
+h4 {
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+nav {
+    padding: 30px;
+    text-align: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 9998;
+    height: 90px;
+}
+
+nav a {
+    margin-left: 25px;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    color: #C7D27A;
+    text-decoration: none;
+}
+
+#showMenu {
+    display: none;
+}
+
+#logo {
+    text-align: left;
+    width: 30%;
+    margin-left: 40px;
+    margin-top: 5px;
+    position: fixed;
+    top: 25px;
+    left: 35px;
+    z-index: 9999;
+}
+
+#logo img {
+    position: fixed;
+    top: 21px;
+    left: 30px;
+}
+
+section {
+    background-color: beige;
+    padding: 30px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+section img {
+    max-width: 300px;
+    margin-right: 5%;
+    padding: 10px;
+    border: 4px solid white;
+    float: left;
+}
+
+#aboutOrtho {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#aboutOrtho a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#aboutOrtho a:hover {
+    transition: 0.3s;
+    color: #C7D27A;
+}
+
+#secTitle {
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: black;
+}
+
+.quote {
+    font-size: 20px;
+}
+
+.author {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.col-sm i {
+    font-size: 14px;
+    color: #C7D27A;
+}
+
+hr {
+    width: 800px;
+    border-top: 1px solid #2F4558;
+    margin: auto;
+}
+
+#faq {
+    margin-top: -50px;
+    padding: 30px;
+}
+
+#map {
+    width: 48%;
+    height: 250px;
+    background-color: grey;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+}
+
+#mapText {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 45%;
+    float: right;
+    font-size: 21px;
+}
+
+#aboutText {
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 50px;
+}
+
+#stock {
+    background-image: url("stock2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stock2 {
+    background-image: url("stock3.jpg");
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#homeWrapper {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#homeWrapper i {
+    font-size: 35px;
+    color: #2F4558;
+}
+
+.centeredText {
+    text-align: center;
+    font-size: 22px;
+}
+
+.clearfix {
+    overflow: auto;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Styling the form */
+
+#contactForm {
+    padding: 20px;
+    text-align: center;
+}
+
+input[type=text],
+select {
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #2F4558;
+    transition: 0.3s;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+
+td {
+    padding-right: 25px;
+}
+
+.boxTitle {
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #C7D27A;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    transition: 0.3s;
+    color: white;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+    nav {
+        margin-top: 60px;
+        text-align: center;
+        background-color: white;
+    }
+    #mainNav {
+        display: none;
+    }
+    #smallNav {
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        display: ;
+        background-color: white;
+    }
+    #showMenu {
+        display: block;
+        background-color: white;
+    }
+    #logo {
+        margin: 0 auto;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        font-size: 21px;
+        max-height: 80px;
+        height: 100%;
+        margin-top: 0px;
+        top: 0;
+        left: 0;
+        padding-left: 43%;
+    }
+    #logo img {
+        left: 35%;
+        top: 44px;
+    }
+    .logoText {
+        margin-top: 47px;
+    }
+    #aboutOrtho {
+        padding: 20px;
+    }
+    section {
+        margin-top: 150px;
+    }
+    hr {
+        width: 700px;
+    }
+    #stock {
+        height: 50%;
+        margin-top: 150px;
+    }
+    #map {
+        width: 90%;
+        height: 250px;
+        background-color: grey;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    #mapText {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 100%;
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    nav {
+        margin-top: 60px;
+        text-align: center;
+    }
+    #mainNav {
+        display: none;
+    }
+    #smallNav {
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        display: ;
+        background-color: white;
+    }
+    #showMenu {
+        display: block;
+        background-color: white;
+    }
+    #logo {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: ;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+    }
+    #logo img {
+        margin-left: 50px;
+        margin-top: -20px;
+    }
+    .logoText {
+        margin-top: 67px;
+        margin-left: -200px;
+        text-align: center;
+        width: 480px;
+    }
+    #aboutOrtho {
+        padding: 20px;
+    }
+    section {
+        margin-top: 150px;
+    }
+    hr {
+        width: 300px;
+    }
+    #stock {
+        margin-top: 150px;
+        height: 50%;
+    }
+    #map {
+        width: 100%;
+        height: 250px;
+        background-color: grey;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    #mapText {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 100%;
+        font-size: 21px;
+    }
+}

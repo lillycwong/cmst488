@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us | Thabet Orthodontics</title>
+    <link rel="icon" href="thabet.png" sizes="any" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link type="text/css" href="main.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="thabet.png">
+        <div class="logoText">Thabet Orthodontics</div>
+    </div>
+
+    <nav>
+        <div id="mainNav">
+            <a href="/~ct488a08/final/index.html">HOME</a>
+            <a href="/~ct488a08/final/about-us.html">ABOUT US</a>
+            <a href="/~ct488a08/final/about-ortho.html">ABOUT ORTHODONTICS</a>
+            <a href="/~ct488a08/final/patients.html">FOR PATIENTS</a>
+            <a href="/~ct488a08/final/testimonials.html">TESTIMONIALS</a>
+            <a href="/~ct488a08/final/contact.html">CONTACT US</a>
+        </div>
+        <div id="smallNav">
+            <br>
+            <div id="showMenu"><i class="fas fa-bars"></i> MENU</div>
+            <div class="menu" style="display: none;">
+                <br>
+                <a href="/~ct488a08/final/index.html">HOME</a>
+                <br><a href="/~ct488a08/final/about-us.html">ABOUT US</a>
+                <br><a href="/~ct488a08/final/about-ortho.html">ABOUT ORTHODONTICS</a>
+                <br><a href="/~ct488a08/final/patients.html">FOR PATIENTS</a>
+                <br><a href="/~ct488a08/final/testimonials.html">TESTIMONIALS</a>
+                <br><a href="/~ct488a08/final/contact.html">CONTACT US</a>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $('#showMenu').click(function() {
+                    $('.menu').slideToggle("fast");
+                });
+            });
+        </script>
+    </nav>
+
+
+    <section>
+        <div class="clearfix">
+            <div id="secTitle">CONTACT US</div>
+
+            <br>
+            <hr>
+
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var thabet = {
+                        lat: 39.20,
+                        lng: -77.25
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: thabet
+                    });
+                    var marker = new google.maps.Marker({
+                        position: thabet,
+                        map: map
+                    });
+                }
+            </script>
+
+            <div id="mapText">
+                <b>Address:</b>
+                <br>20680 Seneca Meadows Pkwy #207
+                <br>Germantown, MD 20876
+                <br><br><b>Phone Number:</b>
+                <br>301-515-8500
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <div id="aboutOrtho">
+        <br><br>
+
+        <div id="secTitle">
+            OFFICE HOURS
+        </div>
+        <br>
+        <hr><br>
+        <table>
+            <tr>
+                <td>Monday</td>
+                <td>10:00am to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>8:30am to 6:00pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00am to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>8:30am to 6:00pm</td>
+            </tr>
+        </table>
+        <br>We are open one Saturday per month during the school year.
+        <br><br><br>
+    </div>
+
+    <div id="secTitle">HAVE A QUESTION?</div>
+    <br>
+    <hr><br>
+    <div id="contactForm">
+        <form name="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name
+            <br><input type="text" name="name">
+            <br><br>Email
+            <br><input type="text" name="email">
+            <br><br>Message
+            <br><input type="text" name="message" style="height:200px">
+            <br><br><input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+        <br><br>2018 &copy; Thabet Orthodontics
+    </footer>
+
+    <!-- JavaScript -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1ynYJVbl714KvG-E1G8EUmYEwrkLnscs&callback=initMap">
+    </script>
+    <script type="text/javascript" src="final.js"></script>
+</body>
+
+</html>
